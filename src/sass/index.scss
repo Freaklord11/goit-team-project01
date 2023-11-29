@@ -1,5 +1,5 @@
 @import './common';
-@import './example';
+@import './header';
 
 /*Global Variables*/
 
@@ -12,4 +12,11 @@
     --BANANA: #EDD251;
     --WATERMELONGREEN:#9DC262;
     
+}
+
+.container{
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
