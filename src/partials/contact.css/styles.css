@@ -2,16 +2,22 @@ body {
   background-color: #ae1332;
 }
 
+.container {
+  width: 1280px;
+}
+
 .contact-section {
   text-align: center;
   align-items: center;
+  justify-content: center;
+ 
 }
 
 .contact-hdr {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "dm" sans-serif;
+  font-family: dm sans;
   font-size: 64px;
   font-weight: 500;
   line-height: 64px;
@@ -24,6 +30,8 @@ body {
 .contact-img {
   gap: 24px;
   display: flex;
+  justify-content: center;
+  padding: 0 32px;
 }
 
 .img-melon {
@@ -38,15 +46,66 @@ body {
   border-radius: 20px;
 }
 
+.contact-order {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  width: 492px;
+  padding-top: 80px;
+}
+
 .contact-slogan {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: "DM" sans;
+  font-family: dm sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.56px;
   width: 492px;
+  
+}
+
+.contact-textbox {
+  color: #fff;
+  background-color: transparent;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  opacity: 0.3;
+  width: 292px;
+  height: 48px;
+  flex-shrink: 0;
+  padding-left: 24px;
+  font-family: dm sans;
+}
+
+.contact-button {
+  border: 1px solid black;
+  border-radius: 100px;
+  background: #9dc162;
+  display: inline-flex;
+  padding: 15px 35px;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  font-family: dm sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+}
+
+.contact-subs {
+  display: inline-flex;
+  padding-bottom: 150px;
 }
