@@ -1,0 +1,52 @@
+body {
+  background-color: #ae1332;
+}
+
+.contact-section {
+  text-align: center;
+  align-items: center;
+}
+
+.contact-hdr {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: sans;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -2.56px;
+  text-transform: uppercase;
+  width: 740px;
+  align-items: center;
+}
+
+.contact-img {
+  gap: 24px;
+  display: flex;
+}
+
+.img-melon {
+  width: 792px;
+  height: 502px;
+  border-radius: 20px;
+}
+
+.img-berry {
+  width: 400px;
+  height: 502px;
+  border-radius: 20px;
+}
+
+.contact-slogan {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: "DM" sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  width: 492px;
+}
