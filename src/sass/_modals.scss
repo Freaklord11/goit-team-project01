@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.thankyoupopup {
+    border-radius: 20px;
+    background: #E03F5E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 600px;
+    max-height: 545px;
+    margin: auto;
+}
+
+.thankyouclosebutton {
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.raspberry {
+    width: 278px;
+    height: 239px;
+    padding-top: 68px;
+}
+
+.thankyoutext {
+    color: #FFF;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    /* 110% */
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    padding-top: 28px;
+    padding-bottom: 14px;
+}
+
+.thankyouparagraph {
+    max-width: 391px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .thankyoupopup {
+        max-width: 335px;
+        max-height: 426px;
+    }
+
+    .raspberry {
+        width: 207px;
+        height: 176px;
+        padding-top: 40px;
+    }
+
+    .thankyoutext {
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: -1.12px;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+
+    .thankyouparagraph {
+        max-width: 295px;
+    }
+}
