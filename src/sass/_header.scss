@@ -1,19 +1,23 @@
 @import './mobile';
 
-.Nav{
+.Nav-Bar{
     background-color: var(--WHITE);
-    height: 258px;
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .company-name{
     color: var(--RED);
     text-align: center;
     font-family: DM Sans;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.56px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
 }
 
 .company-icon{
@@ -21,8 +25,10 @@
 }
 
 .nav-logo{
-    display:flex;
+    display:inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap:8px;
+    flex-shrink: 0;
 }
