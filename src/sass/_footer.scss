@@ -133,5 +133,13 @@ footer-icon {
     text-align: center;
   }
   
+}
 
+@media (min-width: 768px) {
+  .footercontainer {
+    width: 768px;
+    height: 475px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
