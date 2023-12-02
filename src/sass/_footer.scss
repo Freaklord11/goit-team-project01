@@ -118,7 +118,7 @@ footer-icon {
 // responsive
 @media (min-width: 375px), (max-width: 767px) {
   .footercontainer {
-    // width: 375px;
+    width: 375px;
     height: 626px;
     flex-wrap: wrap;
     justify-content: space-evenly;
