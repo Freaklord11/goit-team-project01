@@ -135,7 +135,7 @@ footer-icon {
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px), (min-width: 1279px) {
   .footercontainer {
     width: 768px;
     height: 475px;
