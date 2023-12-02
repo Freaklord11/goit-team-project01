@@ -114,3 +114,14 @@ footer-icon {
   letter-spacing: -0.56px;
   text-decoration: none;
 }
+
+// responsive
+@media (min-width: 375px){
+  .footercontainer {
+    width: 375px;
+    height: 626px;
+    flex-direction: column;
+  }
+  
+
+}
