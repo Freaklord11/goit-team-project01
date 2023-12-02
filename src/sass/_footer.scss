@@ -143,6 +143,13 @@ footer-icon {
     flex-direction: column;
     align-content:space-between;
   }
+  .footer-contacts:nth-child(2) p {
+    text-align: left;
+  }
+
+  .footer-contacts li {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -151,5 +158,12 @@ footer-icon {
     height: 377px;
     flex-direction: row;
     justify-content:space-between;
+  }
+  .footer-contacts:nth-child(2) p {
+    text-align: left;
+  }
+
+  .footer-contacts li {
+    text-align: left;
   }
 }
