@@ -1,21 +1,27 @@
 body {
   background-color: #ae1332;
+  font-family: dm sans;
 }
 
 .container {
   width: 1280px;
+
 }
 
 .contact-section {
   text-align: center;
-  align-items: center;
-  justify-content: center;
- 
+
+}
+
+.cntct {
+
+  padding: 0 32px;
+
 }
 
 .contact-hdr {
   color: #fff;
-  text-align: center;
+  justify-content: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: dm sans;
   font-size: 64px;
@@ -24,7 +30,14 @@ body {
   letter-spacing: -2.56px;
   text-transform: uppercase;
   width: 740px;
-  align-items: center;
+  display: inline-block;
+  transform: translatey(94%);
+
+
+
+  
+
+
 }
 
 .contact-img {
@@ -61,35 +74,30 @@ body {
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: dm sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.56px;
   width: 492px;
-  
 }
 
 .contact-textbox {
   color: #fff;
   background-color: transparent;
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   letter-spacing: -0.56px;
   border-radius: 100px;
   border: 1px solid #fff;
   opacity: 0.3;
   width: 292px;
   height: 48px;
-  flex-shrink: 0;
   padding-left: 24px;
   font-family: dm sans;
 }
 
 .contact-button {
-  border: 1px solid black;
+  border: 1px solid #9dc162;
   border-radius: 100px;
   background: #9dc162;
   display: inline-flex;
@@ -103,9 +111,16 @@ body {
   line-height: 18px;
   letter-spacing: -0.56px;
   text-transform: capitalize;
+  position: absolute;
+  left: 1;
+  transform: translateX(-100%);
+  cursor: pointer;
+  padding-top: 17px;
+ 
 }
 
 .contact-subs {
   display: inline-flex;
   padding-bottom: 150px;
 }
+
