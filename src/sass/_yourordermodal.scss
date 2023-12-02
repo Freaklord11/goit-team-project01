@@ -1,0 +1,243 @@
+.yourorderpopup {
+    border-radius: 20px;
+    background: #FFF;
+    background-image: url(/src/images/womanbanana.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 891px;
+    max-height: 911px;
+    margin: auto;
+}
+
+
+
+.yourorderclosebutton {
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.yourorder {
+    color: #AE1332;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: auto;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.fruitbasketscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.fruitbasket {
+    border-radius: 20px;
+    max-height: 308px;
+    position: relative;
+}
+
+.red {
+    background: #F8766B;
+}
+
+.yellow {
+    background: #EDD251;
+}
+
+.green {
+    background: #9DC262;
+}
+
+.basketcheckbox {
+    position: absolute;
+    display: flex;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 14px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1.6px solid #FFF;
+    cursor: pointer;
+}
+
+.basketcheckbox:checked {
+    background-color: none;
+}
+
+.basketcheckbox:checked::before {
+    content: '\2713';
+    color: #FFF;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.basketheader {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: -0.96px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 37px;
+    margin: 0;
+}
+
+.planttext {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+    padding-top: 8px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.redimagebasket {
+    max-width: 257px;
+    width: 100%;
+    max-height: 214px;
+    height: 100%;
+    padding: 4px 42px 14px;
+}
+
+.yellowimagebasket {
+    max-width: 257px;
+    width: 100%;
+    max-height: 214px;
+    height: 100%;
+    padding: 4px 14px 14px;
+}
+
+.greenimagebasket {
+    max-width: 257px;
+    width: 100%;
+    max-height: 214px;
+    height: 100%;
+    padding: 4px 14px 14px;
+}
+
+/* Forms */
+
+.formpiccontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.yourorderform {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    padding: 40px 40px;
+}
+
+.input-forms {
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 14px 15px;
+    width: 310px;
+    /*  360 */
+    outline: none;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+    opacity: 1;
+}
+
+.modalcomment {
+    width: 310px;
+    /*  360 */
+    padding: 14px 24px 112px 15px;
+    resize: none;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    opacity: 1;
+}
+
+
+.yourorderform input:invalid:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+}
+
+.yourordersubmit {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    width: 92px;
+    height: 42px;
+    border-radius: 100px;
+    background: #9DC162;
+    border: none;
+    color: var(--primary-color);
+    padding: 0;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.yourordersubmit:hover {
+    background: #FFF;
+    color: #9DC162;
+    border: 0.5px solid #9DC162;
+}

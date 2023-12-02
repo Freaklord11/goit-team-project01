@@ -1,0 +1,52 @@
+<div class="yourorderpopup">
+    <button class="yourorderclosebutton">
+        <svg width="28px" height="28px">
+            <use href="/src/images/x.svg#x"></use>
+        </svg>
+    </button>
+
+    <h1 class="yourorder">YOUR ORDER</h1>
+
+    <!-- fruit baskets -->
+    <div class="fruitbasketscontainer">
+        <div class="red fruitbasket">
+            <input type="checkbox" name="checkbox" id="checkbox" class="basketcheckbox">
+            <h2 class="basketheader">Strawberry Basket</h2>
+            <h3 class="planttext">Plant</h3>
+            <img class="redimagebasket" src="/src/images/strawberrybasket.png" alt="Strawberry Basket">
+        </div>
+
+        <div class="yellow fruitbasket">
+            <input type="checkbox" name="checkbox" id="checkbox" class="basketcheckbox">
+            <h2 class="basketheader">Apple Basket</h2>
+            <h3 class="planttext">Plant</h3>
+            <img class="yellowimagebasket" src="/src/images/applebasket.png" alt="Apple Basket">
+        </div>
+
+        <div class="green fruitbasket">
+            <input type="checkbox" name="checkbox" id="checkbox" class="basketcheckbox">
+            <h2 class="basketheader">Fruits Basket</h2>
+            <h3 class="planttext">Plant</h3>
+            <img class="greenimagebasket" src="/src/images/fruitsbasket.png" alt="Fruit Basket">
+        </div>
+    </div>
+
+
+    <!-- Forms -->
+    <form action="" class="yourorderform">
+        <input type="text" id="name" class="input-forms" pattern="[A-Za-z\s]+" placeholder="Enter full name..."
+            required>
+        <input class="input-forms" type="email" inputmode="email" name="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Enter email..." required>
+        <input class="input-forms" id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+            autocomplete="cc-number" maxlength="19" placeholder="Enter card..">
+        <input type="text" class="modalcomment" name="comments" placeholder="Enter comments...">
+        </input>
+        <button class="yourordersubmit" type="submit">Submit</button>
+
+    </form>
+
+
+
+
+</div>
