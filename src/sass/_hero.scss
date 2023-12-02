@@ -1,0 +1,26 @@
+.hero-section{
+    background-image: url(/src/images/redhaired-woman.jpg);
+    background-repeat: no-repeat;
+    width: 1053px;
+    height: 702px;
+}
+.hero-section{
+    display: flex;
+ 
+    background-color: #AE1332;
+    width: 768px;
+    height: 6751px;
+}
+.hero-text{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px; /* 108% */
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    width: 704px;
+}
