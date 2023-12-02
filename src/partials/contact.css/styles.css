@@ -15,7 +15,7 @@ body {
 
 .cntct {
 
-  padding: 0 32px;
+  /* padding: 0 32px; */
 
 }
 
@@ -31,7 +31,7 @@ body {
   text-transform: uppercase;
   width: 740px;
   display: inline-block;
-  transform: translatey(94%);
+  transform: translatey(73%);
 
 
 
