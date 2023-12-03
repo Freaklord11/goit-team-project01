@@ -115,6 +115,10 @@ body {
 
 // responsive
 @media (min-width: 375px), (max-width: 767px) {
+  .cont-sect {
+    justify-content: center;
+    align-items: center;
+  }
   .contact-section {
     width: 375px;
     height: 529px;
