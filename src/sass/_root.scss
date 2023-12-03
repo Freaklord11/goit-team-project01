@@ -8,14 +8,19 @@
     --STRAWBERRY:#F8766B;
     --BANANA: #EDD251;
     --WATERMELONGREEN:#9DC262;
-    
+    --REDAPPLE:#E93F29;
+    --PEACH:#DB4F4B;  
+    --PLUMS: #9B5366;  
+    --ORANGE: #F47F4C;
+    --KIWI:#98B37E;
 }
 
+body{
+    margin: 0 auto;
+    width: 1280px;
+}
 li{
     list-style: none;
-}
-body{
-    width: 1556px;
 }
 .container{
     margin-left: auto;
