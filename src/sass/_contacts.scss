@@ -173,8 +173,8 @@ body {
   .contact-img {
     height:480px;
     width: 704px;
-    // background-size: cover;
     display: flex;
+    flex-direction: column;
   }
   .img-melon {
     height: 480px;
@@ -185,7 +185,9 @@ body {
     width: 344px;
   }
   .contact-order {
-    display: block
+    display: flex;
+    width: 492px;
+    height: 182px;
   }
 
 }
