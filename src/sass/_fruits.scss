@@ -1,0 +1,209 @@
+.fruits{
+    width: 100%;
+    background-color: var(--RED);
+}
+
+.fruit-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+.fruit-header{
+    text-align: center;
+    width: 624px;
+    color: var(--WHITE);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 110% */
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+}
+
+.fruit-def{
+    width: 547px;
+    text-align: center;
+    color: var(--WHITE);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    padding-bottom: 44px;
+}
+
+.fruit-list{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 44px;
+}
+
+.fruit-card{
+    width:389px;
+    height: 465px;
+    background-size: 295px 251px;
+    border-radius: 20px;
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.fruit-name{
+    color: var(--WHITE);
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 118.75% */
+    letter-spacing: -1.28px;
+}
+
+.plant-type{
+    padding-top: 7px;
+    color: var(--WHITE);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.36px;
+}
+
+.price-container{
+    width: 136px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--WHITE);
+    border-radius: 200px;
+}
+
+.fruit-price{
+    color: var(--RED);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.72px;
+}
+
+/*Fruits Image*/
+
+#strawberry{
+    background: url('/src/images/stawberry.png'), var(--STRAWBERRY);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banana{
+    background: url('/src/images/banana.png'), var(--BANANA);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#watermelon{
+    background: url('/src/images/watermelon.png'), var(--WATERMELONGREEN);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#lime{
+    background: url('/src/images/lime.png'), var(--LIGHTGREEN);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#apple{
+    background: url('/src/images/apple.png'), var(--REDAPPLE);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#peach{
+    background: url('/src/images/peach.png'), var(--PEACH);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#plums{
+    background: url('/src/images/plums.png'), var(--PLUMS);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#orange{
+    background: url('/src/images/orange.png'), var(--ORANGE);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kiwi{
+    background: url('/src/images/kiwi.png'), var(--KIWI);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.order-btn{
+    width: 114px;
+    height: 114px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--WATERMELONGREEN);
+    border-radius: 50%;
+    
+}
+
+.arrow{
+    fill: var(--WHITE);
+}
+.order-lbl{
+    color: var(--WHITE);
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    transform: rotate(-14 deg);
+}
+/*Mobile*/
+
+@media only screen and (min-width: 375px) and (max-width:767px)
+{
+    .container{
+        width: 375px;
+    }
+    .fruit-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #kiwi,#orange,#plums{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .container{
+        width: 1200px;
+    }
+    .fruit-list{
+        flex-basis: calc(100% / 3 - 30px);
+    }
+}
