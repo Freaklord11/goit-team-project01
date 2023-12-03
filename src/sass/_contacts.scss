@@ -124,12 +124,17 @@ body {
     height: 529px;
     margin: 80px 20px;
   }
+  .contact-img {
+    height:476px;
+    width: 335px;
+    background-size: cover;
+  }
   .img-berry {
     display: none;
   }
   .img-melon {
-    height: 476px;
-    width: 335px;
+    height: 100%;
+    width: 100%;
   }
   .contact-order {
     display: none;
