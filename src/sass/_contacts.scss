@@ -155,7 +155,7 @@ body {
     padding-right: 10px;
   }
 }
-media (max-width: 767px) {
+@media (max-width: 767px) {
   .img-berry {
     display: none;
   }
