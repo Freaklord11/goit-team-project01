@@ -139,6 +139,14 @@ body {
   // .contact-order {
   //   display: none;
   // }
+}
+@media (max-width: 767px) {
+  .img-berry {
+    display: none;
+  }
+  .contact-order {
+    display: none;
+  }
   .cntct {
     height: 100%;
     width: 100%;
@@ -153,14 +161,6 @@ body {
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-@media (max-width: 767px) {
-  .img-berry {
-    display: none;
-  }
-  .contact-order {
-    display: none;
   }
 }
 
