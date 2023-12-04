@@ -86,7 +86,7 @@
 
 .fruit-pic{
     margin: 0 auto;
-    background-image: url('/src/images/berry.gif');
+    background: url('/src/images/berry.gif'), lightgray 0px -2.437px / 100% 101.864% no-repeat;
     width: 860px;
     height: 476px;
     border-radius: 20px;
@@ -102,4 +102,35 @@
     font-weight: 400;
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.56px;
+}
+
+/*Mobile and tab*/
+
+@media only screen and (min-width: 375px) and (max-width:1279px) {
+    .container{
+        width:375px;
+    }
+    .howitworks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .step-order{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width:767px){
+    .fruit-pic{
+        width: 335px;
+        height: 476px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1279px){
+    .fruit-pic{
+        width: 704px;
+        height: 476px;
+    }
 }

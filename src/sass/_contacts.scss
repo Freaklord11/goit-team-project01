@@ -115,8 +115,10 @@ body {
 }
 
 // responsive
-@media (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:767) {
   .contact-sect {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -165,7 +167,7 @@ body {
   }
 }
 
-@media (min-width: 768px), (min-width: 1279px) {
+@media (min-width: 768px), (max-width: 1279px) {
   .contact-section {
     width: 768px;
     height: 812px;
@@ -201,6 +203,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 150px;
   }
   .contact-img {
     height:591px;

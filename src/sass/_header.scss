@@ -30,3 +30,34 @@
     gap:8px;
     flex-shrink: 0;
 }
+
+.link-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-list-item{
+    color: var(--RED);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+}
+
+@media (min-width:375px) and (max-width:767px) {
+    .container{
+        width: 375px;
+    }
+    .link-list,
+    .shopping-logo
+    {
+        display:none
+    }
+
+}

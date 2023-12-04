@@ -193,9 +193,6 @@
 
 @media only screen and (min-width: 375px) and (max-width:767px)
 {
-    .container{
-        width: 375px;
-    }
     .fruit-list{
         display: flex;
         flex-direction: column;
@@ -207,10 +204,23 @@
     }
 }
 
-@media (min-width: 1200px)
+@media only sceen and (min-width:768px) and (max-width:1279px) 
 {
     .container{
-        width: 1200px;
+        width: 768px;
+    }
+    .fruit-list{
+        flex-basis: calc(100% / 2 - 30px);
+    }
+    #kiwi{
+        display: none;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    .container{
+        width: 1280px;
     }
     .fruit-list{
         flex-basis: calc(100% / 3 - 30px);

@@ -116,7 +116,7 @@ footer-icon {
 }
 
 // responsive
-@media (min-width: 375px), (max-width: 767px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .footercontainer {
     width: 375px;
     height: 626px;
@@ -132,7 +132,7 @@ footer-icon {
   }
 }
 
-@media (min-width: 768px), (min-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .footercontainer {
     width: 768px;
     height: 475px;
