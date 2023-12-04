@@ -256,13 +256,11 @@
     color: #9DC162;
     border: 0.5px solid #9DC162;
 }
-
-@media (min-width:376px) and (max-width:767px)
-    {
+@media (max-width: 851px) {
     .yourorderpopup {
         max-width: 704px;
         max-height: 853px;
-        background-image: url()
+        background-image: url(./halfwomanbanana.png);
     }
 
     .fruitbasketscontainer {
@@ -382,8 +380,7 @@
 
 }
 
-@media (max-width: 375px)
-    {
+@media (max-width: 680px) {
     .yourorderpopup {
         max-width: 335px;
         max-height: 903px;
