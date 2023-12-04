@@ -115,12 +115,13 @@ body {
 }
 
 // responsive
-@media only screen and (min-width: 375px) and (max-width:767) {
+@media (min-width: 375px) {
   .contact-sect {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
   .contact-section {
     width: 375px;
@@ -131,6 +132,7 @@ body {
     height:476px;
     width: 375px;
     background-size: cover;
+    margin: 0 auto;
   }
   // .img-berry {
   //   display: none;
@@ -139,10 +141,8 @@ body {
     height: 476px;
     width: 375px;
   }
-  // .contact-order {
-  //   display: none;
-  // }
 }
+
 @media (max-width: 767px) {
   .img-berry {
     display: none;
@@ -165,9 +165,14 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .contact-sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@media (min-width: 768px), (max-width: 1279px) {
+@media (min-width: 768px),(max-width: 1279px) {
   .contact-section {
     width: 768px;
     height: 812px;
@@ -189,10 +194,6 @@ body {
     height: 480px;
     width: 344px;
   }
-  .contact-order {
-    display: flex;
-  }
-
 }
 
 @media (min-width: 1280px) {
