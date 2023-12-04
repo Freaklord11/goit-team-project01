@@ -3,8 +3,12 @@
     width: auto;
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content:space-around ;
     align-items: center;
+}
+
+.nav-logo{
+    position: absolute;
 }
 .company-name{
     color: var(--RED);
@@ -39,7 +43,7 @@
     gap: 20px;
 }
 
-.link-list-item{
+.link-list-item a{
     color: var(--RED);
     text-align: center;
     font-family: DM Sans;
