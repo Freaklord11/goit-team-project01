@@ -34,5 +34,8 @@
     <symbol id="icon-Oval" viewBox="0 0 85 32">
     <path d="M42.383 22.468c22.467 0 40.681-2.896 40.681-6.468s-18.213-6.468-40.681-6.468c-22.467 0-40.681 2.896-40.681 6.468s18.213 6.468 40.681 6.468z"></path>
     </symbol>
+    <symbol id="icon-Ellipse" viewBox="0 0 32 32">
+    <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+    </symbol>
 </defs>
 </svg>
