@@ -1,3 +1,4 @@
+//OrderModal
 (() => {
   const refs = {
     openOrderModalBtn: document.querySelector(".order-modal-open"),
@@ -20,7 +21,6 @@
   function toggleSubmitModal() {
     refs.submitModal.classList.toggle("is-hidden");
   }
-
   function submitAndToggleModals() {
     // Here you can perform any necessary actions related to form submission
     // For now, let's just close the submit-modal and open the order-modal
