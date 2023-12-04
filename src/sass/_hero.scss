@@ -1,26 +1,40 @@
 .hero-section{
-    background-image: url(/src/images/redhaired-woman.jpg);
-    background-repeat: no-repeat;
-    width: 1053px;
-    height: 702px;
+    background-color: #AE1332; 
+    height: 5469px;
+ }
+ .h1-text{
+   display: flex;
+   justify-content: center;
+  
+ }
+
+.container1-text{
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 64px; /* 100% */
+   letter-spacing: -2.56px;
+   text-transform: uppercase;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   padding-top: 64px;
 }
-.hero-section{
-    display: flex;
- 
-    background-color: #AE1332;
-    width: 768px;
-    height: 6751px;
+.woman{
+   display: flex;
+   justify-content: center;
+   padding-top: 172px;
+   
 }
-.hero-text{
-    color: #FFF;
-    text-align: center;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-    font-family: DM Sans;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 54px; /* 108% */
-    letter-spacing: -2px;
-    text-transform: uppercase;
-    width: 704px;
+.woman1{
+   border-radius: 500px;
 }
+
+
+
+
+
