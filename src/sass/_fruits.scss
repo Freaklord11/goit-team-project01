@@ -102,39 +102,29 @@
 }
 
 /*Fruits Image*/
-
+.fruit-img{
+    text-align: center;
+}
 #strawberry{
-    object-fit: none;
-    object-position: center center;
     background-color: var(--STRAWBERRY);
 }
 #banana{
-    object-fit: none;
-    object-position: center center;
     background-color: var(--BANANA);
 }
 
 #watermelon{
-    object-fit: none;
-    object-position: center center;
     background-color: var(--WATERMELONGREEN);
 }
 #lime{
-    background: url('/src/images/lime.png'), var(--LIGHTGREEN);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--LIGHTGREEN);
 }
 
 #apple{
-    background: url('/src/images/apple.png'), var(--REDAPPLE);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--REDAPPLE)
 }
 
 #peach{
-    background: url('/src/images/peach.png'), var(--PEACH);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--PEACH);
 }
 
 #plums{

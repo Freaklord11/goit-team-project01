@@ -107,9 +107,6 @@
 /*Mobile and tab*/
 
 @media only screen and (min-width: 375px) and (max-width:1279px) {
-    .container{
-        width:375px;
-    }
     .howitworks{
         display: flex;
         flex-direction: column;
@@ -127,10 +124,14 @@
         width: 335px;
         height: 476px;
     }
+    .step-header{
+        width: 375px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width:1279px){
     .fruit-pic{
         width: 704px;
         height: 476px;
     }
+    
 }
