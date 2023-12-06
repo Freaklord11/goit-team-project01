@@ -1,9 +1,8 @@
 .Nav-Bar{
     background-color: var(--WHITE);
-    width: auto;
     height: 50px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -24,24 +23,30 @@
 }
 
 .nav-logo{
-    display:flex;
+    width: 427px;
+    display:inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap:8px;
-    flex-wrap: nowrap;
 }
 
 .link-list{
-    display: flex;
+    width: 427px;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
+    padding: 32px 16px;
 }
 
-.menu-toggle{
-    display: none;
+.shopping-logo{
+    width: 427;
+    padding: 32px 16px;
+    display:inline-flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .link-list-item a{
@@ -58,12 +63,31 @@
 
 
 @media (min-width:375px) and (max-width:767px) {
-    .container{
-        width: 375px;
-    }
     .link-list,
     .shopping-logo
     {
         display:none
+    }
+    .nav-logo{
+        flex-basis: calc(100% / 2 - 30px);
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .toggle-btn{
+        padding: 13px 20px;
+    }
+    
+}
+@media only screen and (min-width:768px) and (max-width:1279px){
+    .menu-toggle{
+        display: none;
+    }
+}
+@media (min-width:1280px){
+    .menu-toggle{
+        display: none;
+    }
+    .Nav-Bar{
+        flex-basis: calc(100% / 3 - 3-px);
     }
 }

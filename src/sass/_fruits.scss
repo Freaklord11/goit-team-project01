@@ -104,22 +104,21 @@
 /*Fruits Image*/
 
 #strawberry{
-    background: url('/src/images/stawberry.png'), var(--STRAWBERRY);
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: none;
+    object-position: center center;
+    background-color: var(--STRAWBERRY);
 }
 #banana{
-    background: url('/src/images/banana.png'), var(--BANANA);
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: none;
+    object-position: center center;
+    background-color: var(--BANANA);
 }
 
 #watermelon{
-    background: url('/src/images/watermelon.png'), var(--WATERMELONGREEN);
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: none;
+    object-position: center center;
+    background-color: var(--WATERMELONGREEN);
 }
-
 #lime{
     background: url('/src/images/lime.png'), var(--LIGHTGREEN);
     background-position: center;
@@ -202,18 +201,27 @@
     #kiwi,#orange,#plums{
         display: none;
     }
+    .fruit-card{
+        width:335px;
+    }
 }
 
-@media only sceen and (min-width:768px) and (max-width:1279px) 
+@media (min-width:768px) and (max-width:1279px) 
 {
     .container{
-        width: 768px;
+        width: 768px;   
     }
     .fruit-list{
         flex-basis: calc(100% / 2 - 30px);
     }
     #kiwi{
         display: none;
+    }
+    .fruit-list{
+        width:1000px;
+    }
+    .fruit-card{
+        width:344px;
     }
 }
 
@@ -225,4 +233,5 @@
     .fruit-list{
         flex-basis: calc(100% / 3 - 30px);
     }
+    
 }
