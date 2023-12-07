@@ -128,21 +128,16 @@
 }
 
 #plums{
-    background: url('/src/images/plums.png'), var(--PLUMS);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--PLUMS);
+
 }
 
 #orange{
-    background: url('/src/images/orange.png'), var(--ORANGE);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--ORANGE);
 }
 
 #kiwi{
-    background: url('/src/images/kiwi.png'), var(--KIWI);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--KIWI);
 }
 
 .order-btn{
@@ -217,7 +212,7 @@
 
 @media (min-width: 1280px)
 {
-    .container{
+    .fruits{
         width: 1280px;
     }
     .fruit-list{
