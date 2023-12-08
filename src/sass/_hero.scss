@@ -1,11 +1,34 @@
 .hero-section{
+   width: 1280px;
     background-color: #AE1332; 
-    height: 5469px;
  }
  .h1-text{
    display: flex;
    justify-content: center;
   
+ }
+ .hero-box{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: nowrap;
+ }
+ .container-left{
+   width: 427px;
+   display: inline-flex;
+   flex-direction: column;;
+ }
+ 
+.container-middle{
+   width: 427px;
+   display: flex;
+   flex-direction: column;
+}
+ .container-right{
+   width:427px;
+   display: inline-flex;
+   flex-direction: column;
+   justify-content: center;
  }
 
 .container-text{
@@ -20,18 +43,15 @@
    line-height: 64px; /* 100% */
    letter-spacing: -2.56px;
    text-transform: uppercase;
-   position: absolute;
    display: flex;
    justify-content: center;
    margin-top: 115px;
 }
 .woman{
    height: 740px;
-   position:static;
    display: flex;
    justify-content: center;
-   margin-top: 172px;
-   margin-left: 225px;
+   align-items: center;
 }
 .woman1{
    border-radius: 500px;
@@ -64,17 +84,6 @@
    flex-shrink: 0;
    
 }
-.watermelon{
-   position: absolute;
-   margin-top: 850px;
-   margin-right: 1120px;
-}
-.watermelon-text{
-   position: absolute;
-   margin-top: 550px;
-   margin-right: 1120px;
-
-}
 .watermelon-text1{
    color: #FFF;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
@@ -101,12 +110,8 @@
    line-height: 14px; /* 116.667% */
    letter-spacing: -0.48px;
 }
-.refresh{
-   position: absolute;
-   margin-top: 1020px;
-   margin-right: 1120px;
-}
 .refresh-text{
+   width: 156px;
    color: #FFF;
    text-align: center;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
@@ -149,19 +154,11 @@
    cursor: pointer;
    color: #A4CB66;
 }
-.fruit-basket{
-   position: absolute;
-   margin-left: 1140px;
-   margin-top: 460px;
-           
-}
 .oval-yellow{
-   border-radius: 300px;
-   height: 410px;
-   width: 245px;
+   border-radius: 500px;
+   width: 249px;
+   height: 387px;
    background-color: #F5CE13; 
-   margin-top: 392px;
-   margin-right: -245px;
 
 }
 .oval-green{
@@ -169,17 +166,10 @@
    background: #A4CB66;
    width: 249px;
    height: 387px;
-   display: flex;
-   position: absolute;
-   margin-top: 765px;
-   margin-right: 1113px;
+   display: inline-flex;
+   flex-direction: column;
 }
 
-.fruit-text-right{
-   position: absolute;
-   margin-left: 1100px;
-   margin-top: 420px;
-}
 .fruit-text-right1{
    color: #FFF;
    text-align: center;
@@ -190,23 +180,6 @@
    font-weight: 400;
    line-height: 14px; /* 116.667% */
    letter-spacing: -0.48px;
-}
-.sweet{
-   position: absolute;
-   margin-left: 1120px;
-   margin-top: 655px;
-}
-.sweet1{
-   color: #FFF;
-   text-align: center;
-   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-   font-family: DM Sans;
-   font-size: 12px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 14px; /* 116.667% */
-   letter-spacing: -0.48px;
-   text-transform: uppercase;
 }
 .hashtag{
    position: absolute;
@@ -237,24 +210,33 @@
 }
 
 
-.organic1,
-.products1,
-.basket1,
-.fruits1{
-   border-radius: 1000px;
-   border: 1px solid #FFF;
-   padding: 12px 32px;
-   align-items: flex-start;
-   gap: 10px;
+
+
+@media only screen and (min-width:375px) and (max-width:767px)
+{
+   .hero{
+      width: 375px;
+   }
+   .hero-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .h1-text{
+      width: 512px;
+      height: 188px;
+   }
+   .container-text{
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 100% */
+      letter-spacing: -1.12px;
+      text-transform: uppercase;
+   }
+   .woman{
+      width: 836px;
+      height: 509px;
+   }
 }
-
-
-
-
-
-
-
-
-
-
-
