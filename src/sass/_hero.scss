@@ -1,34 +1,34 @@
 .hero-section{
-   width: 1280px;
     background-color: #AE1332; 
  }
  .h1-text{
    display: flex;
    justify-content: center;
+   position: relative;
   
  }
  .hero-box{
    display:flex;
    flex-direction: row;
-   justify-content: center;
-   flex-wrap: nowrap;
+   justify-content: space-evenly;
  }
  .container-left{
-   width: 427px;
    display: inline-flex;
-   flex-direction: column;;
+   flex-direction: column;
+   justify-content: center;
+   gap: 44px;
  }
  
 .container-middle{
-   width: 427px;
-   display: flex;
+   display: inline-flex;
    flex-direction: column;
+   align-items: center;
 }
  .container-right{
-   width:427px;
    display: inline-flex;
    flex-direction: column;
    justify-content: center;
+   gap: 44px;
  }
 
 .container-text{
@@ -52,6 +52,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: -124px;
 }
 .woman1{
    border-radius: 500px;
@@ -61,30 +62,8 @@
    outline: 1px solid;
    outline-color: #FFF;
 }
-.test{
-   display: flex;
-   justify-content: center;
-   position: static;
-}
-.straw{
-   position: relative;
-   width: 120px;
-   height: 120px;
-   flex-shrink: 0;
-   margin-top: 65px;
-   margin-left: 45px;
-}
-.banana{
-   position: absolute;
-   margin-right: 730px;
-   margin-top: 240px;
-   width: 100px;
-   height: 100px;
-   transform: rotate(20deg);
-   flex-shrink: 0;
-   
-}
-.watermelon-text1{
+
+.watermelon-text{
    color: #FFF;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
    font-family: DM Sans;
@@ -94,12 +73,8 @@
    line-height: 18px; /* 128.571% */
    letter-spacing: -0.56px;
 }
-.fruit-text{
-   position: absolute;
-   margin-top: 780px;
-   margin-right: 1120px;
-}
-.fruit-text1{
+
+.fruit-text-left{
    color: #FFF;
    text-align: center;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
@@ -109,6 +84,8 @@
    font-weight: 400;
    line-height: 14px; /* 116.667% */
    letter-spacing: -0.48px;
+   padding-top: 28px;
+   padding-bottom: 61px;
 }
 .refresh-text{
    width: 156px;
@@ -123,22 +100,19 @@
    letter-spacing: -0.48px;
    text-transform: uppercase;
 }
-.icon-ellipse{
-   position: absolute;
-   margin-top: 785px;
-   margin-right: 125px;
-   width: 114px;
-   height: 114px;
-}
-.shop{
-   margin-top: 830px;
-   margin-right: -60px; 
-   position: absolute;
-}
+
 .shop-btn{
-   color: #AE1332;
-   background-color: #FFF;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background-color: white;
+   border: none;
    transform: rotate(-14deg);
+   margin-top: -120px;
+}
+.shop-btn a{
+   width: 84px;
+   color: #AE1332;
    text-align: center;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
    font-family: DM Sans;
@@ -147,10 +121,11 @@
    font-weight: 500;
    line-height: 30px; /* 100% */
    letter-spacing: -0.12px;
-   text-transform: uppercase;
-   border: none;
+
 }
-.shop-btn:hover{
+.shop-btn a :hover,
+.shop-btn :hover
+{
    cursor: pointer;
    color: #A4CB66;
 }
@@ -159,7 +134,9 @@
    width: 249px;
    height: 387px;
    background-color: #F5CE13; 
-
+   display: inline-flex;
+   flex-direction: column;
+   align-items: center;
 }
 .oval-green{
    border-radius: 500px;
@@ -168,9 +145,15 @@
    height: 387px;
    display: inline-flex;
    flex-direction: column;
+   align-items: center;
 }
 
-.fruit-text-right1{
+.melon{
+   width: 200px;
+   height: 173px;
+}
+
+.fruit-text-right{
    color: #FFF;
    text-align: center;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
@@ -180,17 +163,12 @@
    font-weight: 400;
    line-height: 14px; /* 116.667% */
    letter-spacing: -0.48px;
-}
-.hashtag{
-   position: absolute;
-   margin-left: 1120px;
-   margin-top: 835px;
-   display: inline-flex;
-   gap: 8px;
+   padding-top: 28px;
+   margin-bottom: 61px;
 }
 
-.hashtag1,
-.hashtag2{
+.sweet1{
+   width: 163px;
    color: #FFF;
    text-align: center;
    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
@@ -201,16 +179,33 @@
    line-height: 14px; /* 116.667% */
    letter-spacing: -0.48px;
    text-transform: uppercase;
-   list-style: none;
 }
 
-
-.basket{
-   margin-left: 40px;
+.hashtag-list-item{
+   padding: 12px 32px;
+   border: 1px solid white ;
+   border-radius: 1000px;
+   text-align: center;
 }
-
-
-
+.hashtag-list{
+   width:269px;
+   display: inline-flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+.hashtag-list-item span{
+   color: #FFF;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 14px; /* 116.667% */
+   letter-spacing: -0.48px;
+   text-transform: uppercase;
+}
 
 @media only screen and (min-width:375px) and (max-width:767px)
 {
@@ -238,5 +233,14 @@
    .woman{
       width: 836px;
       height: 509px;
+   }
+}
+
+@media (min-width:1280px){
+   .container{
+      width:1280px;
+   }
+   .hero-box{
+      flex-basis: calc(100% / 3 - 30px);
    }
 }
