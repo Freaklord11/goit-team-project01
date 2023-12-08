@@ -1,1 +1,264 @@
+<<<<<<< Updated upstream
 //
+=======
+.hero-section{
+    background-color: #AE1332; 
+    height: 5469px;
+ }
+ .h1-text{
+   display: flex;
+   justify-content: center;
+  
+ }
+
+.container-text{
+   margin-left: 100px;
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 64px; /* 100% */
+   letter-spacing: -2.56px;
+   text-transform: uppercase;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   margin-top: 115px;
+}
+.woman{
+   height: 740px;
+   position:static;
+   display: flex;
+   justify-content: center;
+   margin-top: 172px;
+   margin-left: 225px;
+}
+.woman1{
+   border-radius: 500px;
+   border: 4px solid;
+   border-color: #AE1332;
+   border-width: 0 12px 24px 12px;
+   outline: 1px solid;
+   outline-color: #FFF;
+}
+.test{
+   display: flex;
+   justify-content: center;
+   position: static;
+}
+.straw{
+   position: relative;
+   width: 120px;
+   height: 120px;
+   flex-shrink: 0;
+   margin-top: 65px;
+   margin-left: 45px;
+}
+.banana{
+   position: absolute;
+   margin-right: 730px;
+   margin-top: 240px;
+   width: 100px;
+   height: 100px;
+   transform: rotate(20deg);
+   flex-shrink: 0;
+   
+}
+.watermelon{
+   position: absolute;
+   margin-top: 850px;
+   margin-right: 1120px;
+}
+.watermelon-text{
+   position: absolute;
+   margin-top: 550px;
+   margin-right: 1120px;
+
+}
+.watermelon-text1{
+   color: #FFF;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 18px; /* 128.571% */
+   letter-spacing: -0.56px;
+}
+.fruit-text{
+   position: absolute;
+   margin-top: 780px;
+   margin-right: 1120px;
+}
+.fruit-text1{
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 14px; /* 116.667% */
+   letter-spacing: -0.48px;
+}
+.refresh{
+   position: absolute;
+   margin-top: 1020px;
+   margin-right: 1120px;
+}
+.refresh-text{
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 14px; /* 116.667% */
+   letter-spacing: -0.48px;
+   text-transform: uppercase;
+}
+.icon-ellipse{
+   position: absolute;
+   margin-top: 785px;
+   margin-right: 125px;
+   width: 114px;
+   height: 114px;
+}
+.shop{
+   margin-top: 830px;
+   margin-right: -60px; 
+   position: absolute;
+}
+.shop-btn{
+   color: #AE1332;
+   background-color: #FFF;
+   transform: rotate(-14deg);
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 30px; /* 100% */
+   letter-spacing: -0.12px;
+   text-transform: uppercase;
+   border: none;
+}
+.shop-btn:hover{
+   cursor: pointer;
+   color: #A4CB66;
+}
+.fruit-basket{
+   position: absolute;
+   margin-left: 1140px;
+   margin-top: 460px;
+           
+}
+.oval-yellow{
+   border-radius: 300px;
+   height: 410px;
+   width: 245px;
+   background-color: #F5CE13; 
+   margin-top: 392px;
+   margin-right: -245px;
+
+}
+.oval-green{
+   border-radius: 500px;
+   background: #A4CB66;
+   width: 249px;
+   height: 387px;
+   display: flex;
+   position: absolute;
+   margin-top: 765px;
+   margin-right: 1113px;
+}
+
+.fruit-text-right{
+   position: absolute;
+   margin-left: 1100px;
+   margin-top: 420px;
+}
+.fruit-text-right1{
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 14px; /* 116.667% */
+   letter-spacing: -0.48px;
+}
+.sweet{
+   position: absolute;
+   margin-left: 1120px;
+   margin-top: 655px;
+}
+.sweet1{
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 14px; /* 116.667% */
+   letter-spacing: -0.48px;
+   text-transform: uppercase;
+}
+.hashtag{
+   position: absolute;
+   margin-left: 1120px;
+   margin-top: 835px;
+   display: inline-flex;
+   gap: 8px;
+}
+
+.hashtag1,
+.hashtag2{
+   color: #FFF;
+   text-align: center;
+   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 14px; /* 116.667% */
+   letter-spacing: -0.48px;
+   text-transform: uppercase;
+   list-style: none;
+}
+
+
+.basket{
+   margin-left: 40px;
+}
+
+
+.organic1,
+.products1,
+.basket1,
+.fruits1{
+   border-radius: 1000px;
+   border: 1px solid #FFF;
+   padding: 12px 32px;
+   align-items: flex-start;
+   gap: 10px;
+}
+
+
+
+
+
+
+
+//to main
+
+
+
+>>>>>>> Stashed changes
