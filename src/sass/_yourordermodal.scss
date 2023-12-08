@@ -13,7 +13,9 @@
     pointer-events: none;
     opacity: 0;
 }
-
+.close-icon{
+    fill: var(--RED);
+}
 .yourorderpopup {
     border-radius: 20px;
     background: #FFF;
@@ -381,9 +383,13 @@
         right: 20px;
         cursor: pointer;
     }
+    .yellowimagebasket svg{
+        fill: var(--RED);
+    }
     .x-close-button {
         width: 24px;
         height: 24px;
+        fill:var(--RED)
     }
     .yourorder {
         color: #AE1332;
