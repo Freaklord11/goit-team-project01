@@ -1,5 +1,6 @@
 .hero-section{
     background-color: #AE1332; 
+    min-height: 1200px;
  }
  .h1-text{
    display: flex;
@@ -11,8 +12,11 @@
    display:flex;
    flex-direction: row;
    justify-content: space-evenly;
+   flex-wrap: wrap;
+
  }
  .container-left{
+   margin-top: 192px;
    display: inline-flex;
    flex-direction: column;
    justify-content: center;
@@ -20,7 +24,7 @@
  }
  
 .container-middle{
-   display: inline-flex;
+   display:flex;
    flex-direction: column;
    align-items: center;
 }
@@ -208,19 +212,43 @@
 
 @media only screen and (min-width:375px) and (max-width:767px)
 {
-   .hero{
-      width: 375px;
-   }
    .hero-section{
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
    }
+   .hero-box{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 44px 28px;
+   }
+   .container-middle{
+      padding-top: 184px;
+   }
+   .shop-btn{
+      margin-top: 0;
+   }
+   .container-right{
+      flex-direction: column-reverse;
+      padding-top: 56px;
+   }
+   .container-left{
+      margin-top: 0;
+   }
+
+   .hashtag-list{
+      flex-basis: calc(100% / 2 - 30px);
+   }
+   .hashtag-list-item{
+      width: 130px;
+   }
+
    .h1-text{
       width: 512px;
       height: 188px;
    }
+   
    .container-text{
       font-size: 28px;
       font-style: normal;
@@ -233,13 +261,20 @@
       width: 836px;
       height: 509px;
    }
+   
+}
+
+@media only screen and (min-widht:768px) and (max-width:1279px) 
+{
+
 }
 
 @media (min-width:1280px){
    .container{
       width:1280px;
    }
-   .hero-box{
-      flex-basis: calc(100% / 3 - 30px);
+   .hero-sectio   #desktop{
+      display: flex;
+      justify-content: space-evenly;
    }
 }
