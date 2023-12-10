@@ -64,6 +64,10 @@
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
+  .header{
+    position: fixed;
+    z-index: 200;
+  }
   .NavBar,
   .shopping-logo {
     display: none;

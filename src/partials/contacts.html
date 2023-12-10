@@ -20,15 +20,16 @@
         <form action="" class="contact-form form">
           <label class="footer-label label">
             <input
-              type="text"
+              type="email" 
+              inputmode="email" 
               name="email"
-              id="contact-email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               placeholder="Enter email..."
               class="contact-textbox"
               required
             />
           </label>
-          <button class="contact-button" type="submit">Send</button>
+          <button class="contact-button send-modal-open" type="submit">Send</button>
         </form>
       </div>
     </div>
