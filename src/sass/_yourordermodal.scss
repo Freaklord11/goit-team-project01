@@ -1,97 +1,290 @@
-.backdrop-overlay{
-    position: fixed;
-    background-color: rgba(46,47,66,0.40);
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow-y: auto;
+.backdrop-overlay {
+  position: fixed;
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
-.is-hidden{
-    pointer-events: none;
-    opacity: 0;
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
-.close-icon{
-    fill: var(--RED);
+.close-icon {
+  fill: var(--RED);
 }
 .yourorderpopup {
-    border-radius: 20px;
-    background: #FFF;
-    background-image: url(/src/images/womanbanana.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 891px;
-    max-height: 911px;
-    margin: auto;
-    
+  border-radius: 20px;
+  background: #fff;
+  background-image: url(/src/images/womanbanana.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 891px;
+  max-height: 911px;
+  margin: auto;
 }
 
 .yourorderclosebutton {
-    background-color: transparent;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .yourorder {
-    color: #AE1332;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-    font-family: DM Sans;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: -1.6px;
-    text-transform: uppercase;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: auto;
-    align-self: flex-start;
-    margin: 0;
+  color: #ae1332;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: DM Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: auto;
+  align-self: flex-start;
+  margin: 0;
 }
 
 .fruitbasketscontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 20px;
-    padding-top: 40px;
-    padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+  padding-top: 40px;
+  padding-left: 40px;
 }
 
 .fruitbasket {
-    border-radius: 20px;
-    max-height: 308px;
-    position: relative;
+  border-radius: 20px;
+  max-height: 308px;
+  position: relative;
 }
 
 .red {
-    background: #F8766B;
+  background: #f8766b;
 }
 
 .yellow {
-    background: #EDD251;
+  background: #edd251;
 }
 
 .green {
-    background: #9DC262;
+  background: #9dc262;
 }
 
 .basketcheckbox {
+  position: absolute;
+  display: flex;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  top: 14px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1.6px solid #fff;
+  cursor: pointer;
+}
+
+.basketcheckbox:checked {
+  background-color: none;
+}
+
+.basketcheckbox:checked::before {
+  content: '\2713';
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+  left: 4px;
+}
+
+.basketheader {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 116.667% */
+  letter-spacing: -0.96px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 37px;
+  margin: 0;
+}
+
+.planttext {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.28px;
+  padding-top: 8px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.redimagebasket {
+  max-width: 257px;
+  width: 100%;
+  max-height: 214px;
+  height: 100%;
+  padding: 4px 42px 14px;
+}
+
+.yellowimagebasket {
+  max-width: 257px;
+  width: 100%;
+  max-height: 214px;
+  height: 100%;
+  padding: 4px 14px 14px;
+}
+
+.greenimagebasket {
+  max-width: 257px;
+  width: 100%;
+  max-height: 214px;
+  height: 100%;
+  padding: 4px 14px 14px;
+}
+
+/* Forms */
+
+.formpiccontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.yourorderform {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  padding: 40px 40px;
+}
+
+.input-forms {
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 14px 15px;
+  width: 310px;
+  /*  360 */
+  outline: none;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.56px;
+  opacity: 1;
+}
+
+.modalcomment {
+  width: 310px;
+  /*  360 */
+  padding: 14px 24px 112px 15px;
+  resize: none;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  opacity: 1;
+}
+
+.yourorderform input:invalid:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+}
+
+.yourordersubmit {
+  display: inline-block;
+  text-align: center;
+  margin-top: 6px;
+  width: 92px;
+  height: 42px;
+  border-radius: 100px;
+  background: #9dc162;
+  border: none;
+  color: var(--primary-color);
+  padding: 0;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.yourordersubmit:hover {
+  background: #fff;
+  color: #9dc162;
+  border: 0.5px solid #9dc162;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .yourorderpopup {
+    max-width: 704px;
+    max-height: 853px;
+    background-image: url(../images/halfwomanbanana.png);
+  }
+  .fruitbasketscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .fruitbasket {
+    border-radius: 20px;
+    max-height: 250px;
+    position: relative;
+  }
+  .red {
+    background: #f8766b;
+  }
+  .yellow {
+    background: #edd251;
+  }
+  .green {
+    background: #9dc262;
+  }
+  .basketcheckbox {
     position: absolute;
     display: flex;
     appearance: none;
@@ -103,40 +296,36 @@
     height: 20px;
     background-color: transparent;
     border-radius: 4px;
-    border: 1.6px solid #FFF;
+    border: 1.6px solid #fff;
     cursor: pointer;
-}
-
-.basketcheckbox:checked {
+  }
+  .basketcheckbox:checked {
     background-color: none;
-}
-
-.basketcheckbox:checked::before {
+  }
+  .basketcheckbox:checked::before {
     content: '\2713';
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     position: relative;
-    top: 2px;
+    top: 1px;
     left: 4px;
-}
-
-.basketheader {
-    color: #FFF;
+  }
+  .basketheader {
+    color: #fff;
     font-family: DM Sans;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
-    /* 116.667% */
-    letter-spacing: -0.96px;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.72px;
     padding-top: 40px;
     padding-left: 20px;
-    padding-right: 37px;
+    padding-right: 30px;
     margin: 0;
-}
-
-.planttext {
-    color: #FFF;
+  }
+  .planttext {
+    color: #fff;
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
@@ -144,54 +333,203 @@
     line-height: 18px;
     /* 128.571% */
     letter-spacing: -0.28px;
-    padding-top: 8px;
+    padding-top: 2px;
     padding-left: 20px;
     margin: 0;
-}
-
-.redimagebasket {
-    max-width: 257px;
+  }
+  .redimagebasket {
+    max-width: 200px;
+    /* 200 */
     width: 100%;
-    max-height: 214px;
+    max-height: 166px;
+    /*166 */
     height: 100%;
-    padding: 4px 42px 14px;
-}
-
-.yellowimagebasket {
-    max-width: 257px;
+    padding: 4px 33px 14px 34px;
+  }
+  .yellowimagebasket {
+    max-width: 200px;
+    /* 200 */
     width: 100%;
-    max-height: 214px;
-    height: 100%;
-    padding: 4px 14px 14px;
-}
-
-.greenimagebasket {
-    max-width: 257px;
-    width: 100%;
-    max-height: 214px;
+    max-height: 166px;
+    /* 166 */
     height: 100%;
     padding: 4px 14px 14px;
+  }
+  .greenimagebasket {
+    max-width: 200px;
+    /* 200 */
+    width: 100%;
+    max-height: 166px;
+    /* 166 */
+    height: 100%;
+    padding: 4px 14px 14px;
+  }
 }
+@media (min-width: 375px) and (max-width: 767px) {
+  .yourorderpopup {
+    max-width: 335px;
+    max-height: 903px;
+    background-image: none;
+  }
+  .input-forms::placeholder {
+    color: #000;
+    opacity: 0.5;
+  }
 
-/* Forms */
-
-.formpiccontainer {
+  .modalcomment::placeholder {
+    color: #000;
+    opacity: 0.5;
+  }
+  .yourorderclosebutton {
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .yellowimagebasket svg {
+    fill: var(--RED);
+  }
+  .x-close-button {
+    width: 24px;
+    height: 24px;
+    fill: var(--RED);
+  }
+  .yourorder {
+    color: #ae1332;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: DM Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 100% */
+    letter-spacing: -1.12px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: auto;
+    align-self: flex-start;
+    margin: 0;
+  }
+  .fruitbasketscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fruitbasket {
+    border-radius: 20px;
+    max-height: 119px;
+    width: 295px;
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
-}
-
-.yourorderform {
+    margin: 0;
+  }
+  .red {
+    background: #f8766b;
+  }
+  .yellow {
+    background: #edd251;
+  }
+  .green {
+    background: #9dc262;
+  }
+  .basketcheckbox {
+    position: absolute;
+    display: flex;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 14px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1.6px solid #fff;
+    cursor: pointer;
+  }
+  .basketcheckbox:checked {
+    background-color: none;
+  }
+  .basketcheckbox:checked::before {
+    content: '\2713';
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+    left: 3px;
+  }
+  .basketheader {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.72px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin: 0;
+  }
+  .planttext {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin: 0;
+  }
+  .redimagebasket {
+    max-width: 120px;
+    /* 200 */
+    width: 100%;
+    max-height: 119px;
+    /*166 */
+    height: 100%;
+    padding: 16px 32px 8px 0px;
+  }
+  .yellowimagebasket {
+    max-width: 163px;
+    width: 100%;
+    max-height: 119px;
+    height: 100%;
+    padding: 16px 32px 8px 25px;
+  }
+  .greenimagebasket {
+    max-width: 163px;
+    width: 100%;
+    max-height: 119px;
+    height: 100%;
+    padding: 16px 32px 8px 30px;
+  }
+  .yourorderform {
     display: flex;
     flex-direction: column;
     row-gap: 14px;
-    padding: 40px 40px;
-}
-
-.input-forms {
+    padding: 20px 20px;
+  }
+  .input-forms {
     border-radius: 100px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 14px 15px;
-    width: 310px;
+    width: 265px;
     /*  360 */
     outline: none;
     color: #000;
@@ -203,10 +541,9 @@
     /* 128.571% */
     letter-spacing: -0.56px;
     opacity: 1;
-}
-
-.modalcomment {
-    width: 310px;
+  }
+  .modalcomment {
+    width: 265px;
     /*  360 */
     padding: 14px 24px 112px 15px;
     resize: none;
@@ -222,25 +559,22 @@
     line-height: 18px;
     letter-spacing: -0.56px;
     opacity: 1;
-}
-
-
-.yourorderform input:invalid:invalid:not(:placeholder-shown) {
+  }
+  .yourorderform input:invalid:invalid:not(:placeholder-shown) {
     border: 2px solid red;
-}
-
-.yourordersubmit {
+  }
+  .yourordersubmit {
     display: inline-block;
     text-align: center;
     margin-top: 6px;
     width: 92px;
     height: 42px;
     border-radius: 100px;
-    background: #9DC162;
+    background: #9dc162;
     border: none;
     color: var(--primary-color);
     padding: 0;
-    color: #FFF;
+    color: #fff;
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
@@ -250,333 +584,5 @@
     letter-spacing: -0.56px;
     text-transform: capitalize;
     cursor: pointer;
+  }
 }
-
-.yourordersubmit:hover {
-    background: #FFF;
-    color: #9DC162;
-    border: 0.5px solid #9DC162;
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-    .yourorderpopup {
-        max-width: 704px;
-        max-height: 853px;
-        background-image: url(../images/halfwomanbanana.png);
-    }
-    .fruitbasketscontainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        padding-top: 40px;
-        padding-left: 40px;
-    }
-    .fruitbasket {
-        border-radius: 20px;
-        max-height: 250px;
-        position: relative;
-    }
-    .red {
-        background: #F8766B;
-    }
-    .yellow {
-        background: #EDD251;
-    }
-    .green {
-        background: #9DC262;
-    }
-    .basketcheckbox {
-        position: absolute;
-        display: flex;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        top: 14px;
-        right: 14px;
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-        border-radius: 4px;
-        border: 1.6px solid #FFF;
-        cursor: pointer;
-    }
-    .basketcheckbox:checked {
-        background-color: none;
-    }
-    .basketcheckbox:checked::before {
-        content: '\2713';
-        color: #FFF;
-        font-size: 14px;
-        position: relative;
-        top: 1px;
-        left: 4px;
-    }
-    .basketheader {
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        /* 133.333% */
-        letter-spacing: -0.72px;
-        padding-top: 40px;
-        padding-left: 20px;
-        padding-right: 30px;
-        margin: 0;
-    }
-    .planttext {
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        /* 128.571% */
-        letter-spacing: -0.28px;
-        padding-top: 2px;
-        padding-left: 20px;
-        margin: 0;
-    }
-    .redimagebasket {
-        max-width: 200px;
-        /* 200 */
-        width: 100%;
-        max-height: 166px;
-        /*166 */
-        height: 100%;
-        padding: 4px 33px 14px 34px;
-    }
-    .yellowimagebasket {
-        max-width: 200px;
-        /* 200 */
-        width: 100%;
-        max-height: 166px;
-        /* 166 */
-        height: 100%;
-        padding: 4px 14px 14px;
-    }
-    .greenimagebasket {
-        max-width: 200px;
-        /* 200 */
-        width: 100%;
-        max-height: 166px;
-        /* 166 */
-        height: 100%;
-        padding: 4px 14px 14px;
-    }
-}
-@media (min-width: 375px) and (max-width:767px) {
-    .yourorderpopup {
-        max-width: 335px;
-        max-height: 903px;
-        background-image: none;
-    }
-    .yourorderclosebutton {
-        background-color: transparent;
-        border: none;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
-    .yellowimagebasket svg{
-        fill: var(--RED);
-    }
-    .x-close-button {
-        width: 24px;
-        height: 24px;
-        fill:var(--RED)
-    }
-    .yourorder {
-        color: #AE1332;
-        text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-        font-family: DM Sans;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 28px;
-        /* 100% */
-        letter-spacing: -1.12px;
-        text-transform: uppercase;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: auto;
-        align-self: flex-start;
-        margin: 0;
-    }
-    .fruitbasketscontainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        padding-top: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .fruitbasket {
-        border-radius: 20px;
-        max-height: 119px;
-        width: 295px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-    }
-    .red {
-        background: #F8766B;
-    }
-    .yellow {
-        background: #EDD251;
-    }
-    .green {
-        background: #9DC262;
-    }
-    .basketcheckbox {
-        position: absolute;
-        display: flex;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        top: 14px;
-        right: 14px;
-        width: 16px;
-        height: 16px;
-        background-color: transparent;
-        border-radius: 4px;
-        border: 1.6px solid #FFF;
-        cursor: pointer;
-    }
-    .basketcheckbox:checked {
-        background-color: none;
-    }
-    .basketcheckbox:checked::before {
-        content: '\2713';
-        color: #FFF;
-        font-size: 12px;
-        position: relative;
-        top: 1px;
-        left: 3px;
-    }
-    .basketheader {
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        /* 133.333% */
-        letter-spacing: -0.72px;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 0;
-        margin: 0;
-    }
-    .planttext {
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        /* 128.571% */
-        letter-spacing: -0.28px;
-        padding-top: 2px;
-        padding-left: 20px;
-        margin: 0;
-    }
-    .redimagebasket {
-        max-width: 120px;
-        /* 200 */
-        width: 100%;
-        max-height: 119px;
-        /*166 */
-        height: 100%;
-        padding: 16px 32px 8px 0px;
-    }
-    .yellowimagebasket {
-        max-width: 163px;
-        width: 100%;
-        max-height: 119px;
-        height: 100%;
-        padding: 16px 32px 8px 25px;
-    }
-    .greenimagebasket {
-        max-width: 163px;
-        width: 100%;
-        max-height: 119px;
-        height: 100%;
-        padding: 16px 32px 8px 30px;
-    }
-    .yourorderform {
-        display: flex;
-        flex-direction: column;
-        row-gap: 14px;
-        padding: 20px 20px;
-    }
-    .input-forms {
-        border-radius: 100px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        padding: 14px 15px;
-        width: 265px;
-        /*  360 */
-        outline: none;
-        color: #000;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        /* 128.571% */
-        letter-spacing: -0.56px;
-        opacity: 1;
-    }
-    .modalcomment {
-        width: 265px;
-        /*  360 */
-        padding: 14px 24px 112px 15px;
-        resize: none;
-        max-width: 100%;
-        border-radius: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        outline: none;
-        color: #000;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: -0.56px;
-        opacity: 1;
-    }
-    .yourorderform input:invalid:invalid:not(:placeholder-shown) {
-        border: 2px solid red;
-    }
-    .yourordersubmit {
-        display: inline-block;
-        text-align: center;
-        margin-top: 6px;
-        width: 92px;
-        height: 42px;
-        border-radius: 100px;
-        background: #9DC162;
-        border: none;
-        color: var(--primary-color);
-        padding: 0;
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        /* 128.571% */
-        letter-spacing: -0.56px;
-        text-transform: capitalize;
-        cursor: pointer;
-    }
-}
-

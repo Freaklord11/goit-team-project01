@@ -86,6 +86,16 @@
   .menu-toggle {
     display: none;
   }
+
+  .company-name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+  }
+  .NavBar-link-list {
+    width: 285px;
+  }
 }
 @media (min-width: 1280px) {
   .menu-toggle {

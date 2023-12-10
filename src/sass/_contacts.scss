@@ -87,6 +87,10 @@ body {
   font-family: dm sans;
 }
 
+.contact-textbox::placeholder {
+  color: #fff;
+}
+
 .contact-button {
   border: 1px solid #9dc162;
   border-radius: 100px;
@@ -122,7 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding-bottom: 80px;
   }
   .contact-section {
     width: 375px;
@@ -188,8 +192,9 @@ body {
   }
   .contact-img {
     height: 480px;
-    width: 704px;
+
     display: flex;
+    justify-content: center;
   }
   .img-melon {
     height: 480px;
