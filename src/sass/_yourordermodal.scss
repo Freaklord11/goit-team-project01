@@ -257,7 +257,7 @@ z-index: 9000;
   border: 0.5px solid #9dc162;
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 664px) and (max-width: 768px) {
   .yourorderpopup {
     max-width: 704px;
     max-height: 853px;
@@ -366,7 +366,7 @@ z-index: 9000;
     padding: 4px 14px 14px;
   }
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 664px) {
   .yourorderpopup {
     max-width: 335px;
     max-height: 903px;
