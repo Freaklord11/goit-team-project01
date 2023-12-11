@@ -67,6 +67,7 @@
   .header{
     position: fixed;
     z-index: 200;
+    width: 100%;
   }
   .hero-section{
     padding-top: 50px;
@@ -93,7 +94,9 @@
   .menu-toggle {
     display: none;
   }
-
+  .header{
+    width: 100%;
+  }
   .company-name {
     font-size: 14px;
     font-weight: 700;
@@ -192,3 +195,4 @@
 .mobile-shopping-icon {
   fill: white;
 }
+//nav icon
