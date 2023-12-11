@@ -29,21 +29,21 @@
   }
 })();
 
-//send modal
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector(".send-modal-open"),
-    closeModalBtn: document.querySelector(".submit-modal-close"),
-    modal: document.querySelector(".submit-modal"),
-  };
+// //send modal
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector(".send-modal-open"),
+//     closeModalBtn: document.querySelector(".submit-modal-close"),
+//     modal: document.querySelector(".submit-modal"),
+//   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//   }
+// })();
 
 //mobile menu
 (() => {
